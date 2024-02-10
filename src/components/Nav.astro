@@ -1,0 +1,25 @@
+<header>
+  <nav
+    class="fixed h-32 px-4 flex items-center justify-between w-full bg-marron"
+  >
+    <input type="checkbox" id="menu" class="peer hidden" />
+    <a href="#"><img class="w-44" src="./logo.webp" alt="" /></a>
+    <label
+      for="menu"
+      class="bg-abrir-menu size-7 bg-cover bg-center cursor-pointer peer-checked:bg-cerrar-menu transition-all duration-200 z-40 md:hidden"
+    ></label>
+
+    <div
+      class="fixed inset-0 bg-gradient-to-b from-slate-200/70 to-blue-950/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none"
+    >
+      <ul
+        class="absolute inset-x-0 rounded-md w-[400px] h-max grid gap-5 mx-auto top-24 p-10 text-center bg-blue-950 text-white font-bold shadow-2xl md:w-max md:p-0 md:grid-flow-col md:static md:bg-transparent md:shadow-none z-50 uppercase"
+      >
+        <li><a href="">Nuestro Compromiso</a></li>
+        <li><a href="">Beneficios</a></li>
+        <li><a href="">Catálogo</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
