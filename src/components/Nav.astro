@@ -1,6 +1,7 @@
 <header>
   <nav
-    class="fixed h-32 px-4 flex items-center justify-between w-full bg-marron"
+    id="nav"
+    class="absolute h-32 px-4 lg:px-8 xl:px-12 flex items-center justify-between w-full"
   >
     <input type="checkbox" id="menu" class="peer hidden" />
     <a href="#"><img class="w-44" src="./logo.webp" alt="" /></a>
@@ -10,16 +11,71 @@
     ></label>
 
     <div
-      class="fixed inset-0 bg-gradient-to-b from-slate-200/70 to-blue-950/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none"
+      class="fixed inset-0 translate-x-full peer-checked:translate-x-0 duration-500 md:static md:translate-x-0 md:bg-none"
     >
       <ul
-        class="absolute inset-x-0 rounded-md w-[400px] h-max grid gap-5 mx-auto top-24 p-10 text-center bg-blue-950 text-white font-bold shadow-2xl md:w-max md:p-0 md:grid-flow-col md:static md:bg-transparent md:shadow-none z-50 uppercase"
+        id="secciones"
+        class="absolute w-full text-center justify-center flex flex-col gap-5 top-32 px-2 py-4 text-white text-xs lg:text-sm xl:text-base font-bold md:w-max md:p-0 sm:flex-row md:static md:bg-transparent md:shadow-none z-50 uppercase"
       >
-        <li><a href="">Nuestro Compromiso</a></li>
-        <li><a href="">Beneficios</a></li>
-        <li><a href="">Catálogo</a></li>
-        <li><a href="">Contacto</a></li>
+        <li>
+          <a
+            class="hover:underline underline-offset-8 decoration-white decoration-2"
+            href="#Compromiso">Nuestro Compromiso</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:underline underline-offset-8 decoration-white decoration-2"
+            href="#Beneficios">Beneficios</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:underline underline-offset-8 decoration-white decoration-2"
+            href="">Catálogo</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:underline underline-offset-8 decoration-white decoration-2"
+            href="">Contacto</a
+          >
+        </li>
       </ul>
     </div>
   </nav>
 </header>
+<style>
+  .fade-in-down {
+    transition-duration: 1.5s;
+    transition-property: background-color;
+
+    animation: move;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+</style>
+<script>
+  window.addEventListener("scroll", function () {
+    const nav = document.getElementById("nav");
+    const secciones = document.getElementById("secciones");
+
+    if (this.window.scrollY > 128) {
+      nav?.classList.remove("absolute");
+      nav?.classList.add("fade-in-down", "fixed", "bg-marron");
+      secciones?.classList.add("bg-marron");
+    } else if (this.window.scrollY > 0) {
+      nav?.classList.remove("fade-in-down", "fixed", "bg-marron");
+      nav?.classList.add("absolute");
+      secciones?.classList.remove("bg-marron");
+    }
+  });
+</script>
