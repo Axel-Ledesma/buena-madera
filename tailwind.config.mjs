@@ -11,6 +11,7 @@ export default {
       colors: {
         marron: "rgb(193, 163, 127)",
         oscuro: "rgb(46, 39, 39)",
+        gris: "rgb(80, 80, 80);",
       },
     },
   },
