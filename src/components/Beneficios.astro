@@ -1,30 +1,50 @@
+---
+import BeneficiosItem from "./extras/BeneficiosItem.astro";
+
+const BENEFICIO = [
+  {
+    src: "./public/beneficios/beneficio1.webp",
+    tittle: "durabilidad",
+    description:
+      "La inversión en Buena Madera se traduce en años de uso sin preocupaciones. A diferencia de la madera tradicional que puede pudrirse o desgastarse con el tiempo, nuestra madera plástica es resistente y duradera, lo que significa que no tendrás que reemplazarla con frecuencia.",
+  },
+  {
+    src: "/public/beneficios/beneficio2.webp",
+    tittle: "cero mantenimiento",
+    description:
+      "Si estás cansado de gastar tiempo y dinero en el mantenimiento de la madera natural, con nuestros productos podés quedarte tranquilo.Nuestra madera plástica no requiere barnizado, sellado o pintura. Su apariencia y resistencia se mantienen sin esfuerzo durante años.",
+  },
+  {
+    src: "/public/beneficios/beneficio3.webp",
+    tittle: "fácil instalación",
+    description:
+      "La facilidad de instalación de Buena Madera reduce el tiempo y el costo de mano de obra. Podés disfrutar rápidamente de tu proyecto sin la complicación de técnicas de instalación complejas.",
+  },
+  {
+    src: "/public/beneficios/beneficio4.webp",
+    tittle: "promueve la economía circular",
+    description:
+      "Nuestra madera plástica se fabrica utilizando plásticos 100% reciclados a través de un proceso de upcycle. No solo evitamos que estos plásticos terminen en vertederos, sino que también reducimos la tala de árboles, contribuyendo al cuidado de nuestros bosques y al equilibrio ecológico.",
+  },
+];
+---
+
 <section class="mb-[400px] px-6 text-center">
   <div>
     <h1 class="uppercase font-semibold lg:text-xl xl:text-2xl">
       beneficios de buena madera
     </h1>
     <div class="border-b w-20 border-black py-2 mx-auto"></div>
-    <h2 class="py-4 text-sm tracking-wide font-semibold text-gris">
+    <h2 class="py-4 text-xs lg:text-sm tracking-wide font-semibold text-gris">
       Creemos que la inversión en sostenibilidad es una inversión para el
       futuro.
     </h2>
   </div>
-  <div class="mx-auto lg:flex lg:gap-4 lg:justify-center">
-    <img class="w-[500px] h-[240px] m-auto lg:mx-0" src="/fondo.webp" alt="" />
-    <div class="my-auto">
-      <h3
-        class="uppercase pt-10 pb-4 lg:pt-0 text-[10px] md:text-[12px] font-bold tracking-widest"
-      >
-        durabilidad
-      </h3>
-      <div class="border-b w-12 border-black mx-auto"></div>
-      <p class="py-4 text-gris max-w-[500px] mx-auto text-[10px]/5 md:text-sm">
-        La inversión en Buena Madera se traduce en años de uso sin
-        preocupaciones. A diferencia de la madera tradicional que puede pudrirse
-        o desgastarse con el tiempo, nuestra madera plástica es resistente y
-        duradera, lo que significa que no tendrás que reemplazarla con
-        frecuencia.
-      </p>
-    </div>
-  </div>
+  {
+    BENEFICIO.map((beneficio) => (
+      <div class="mx-auto lg:flex lg:gap-4 lg:justify-center lg:mb-10">
+        <BeneficiosItem {...beneficio} />
+      </div>
+    ))
+  }
 </section>

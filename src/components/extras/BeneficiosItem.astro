@@ -1,0 +1,32 @@
+---
+interface Props {
+  src: string;
+  tittle: string;
+  description: string;
+}
+const { src, tittle, description } = Astro.props;
+---
+
+<div class="mx-auto lg:flex lg:gap-4 lg:justify-center">
+  <div class="lg:w-[500px] h-[240px] sm:max-lg:h-[400px]">
+    <img
+      id="imagen"
+      class="size-full sm:max-lg:object-contain object-cover m-auto lg:mx-0"
+      src={src}
+      alt=""
+    />
+  </div>
+  <div class="my-auto">
+    <h3
+      class="uppercase pt-10 pb-4 lg:pt-0 text-[10px] md:text-[12px] font-bold tracking-widest"
+    >
+      {tittle}
+    </h3>
+    <div class="border-b w-12 border-black mx-auto"></div>
+    <p
+      class="py-4 pb-12 text-gris max-w-[500px] mx-auto text-[10px]/5 md:text-sm"
+    >
+      {description}
+    </p>
+  </div>
+</div>
