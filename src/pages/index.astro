@@ -1,16 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
-import Home from "../components/Home.astro";
 import Compromiso from "../components/Compromiso.astro";
 import Beneficios from "../components/Beneficios.astro";
+import Presupuesto from "../components/Presupuesto.astro";
 ---
 
 <Layout title="Buena Madera - GEA Sustentable">
   <main>
     <Nav />
-    <Home />
+    <section
+      class="text-center bg-fondo bg-cover h-screen flex justify-center items-center flex-col text-white px-2"
+    >
+      <h1 class="text-4xl font-semibold py-6">
+        Madera fabricada con 100% plástico reciclado
+      </h1>
+      <div class="border-b w-[90%] md:w-2/4 border-marron"></div>
+      <h2 class="py-6 text-lg tracking-widest">
+        Duradera, resistente y sostenible
+      </h2>
+    </section>
     <Compromiso id="Compromiso" />
     <Beneficios id="Beneficios" />
+    <Presupuesto />
+    <footer id="Contacto" class="text-center py-12">
+      <img class="h-32 mx-auto" src="/footer/bm.webp" alt="" />
+      <h3 class="py-4 text-xs md:text-base lg:text-lg font-bold tracking-wide">
+        Autopista Aramburu Km 280.5 <br />
+        Alvear, Santa Fe. Argentina
+      </h3>
+      <div class="border-b w-60 border-marron py-2 mx-auto"></div>
+      <a
+        class="py-8 block max-w-fit mx-auto"
+        href="https://www.instagram.com/geabuenamadera/"
+        target="_blank"
+        rel="noopener noreferrer"><img src="/footer/ig.webp" alt="" /></a
+      >
+    </footer>
   </main>
 </Layout>
