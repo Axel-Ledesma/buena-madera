@@ -1,0 +1,36 @@
+---
+import "photoswipe/style.css";
+---
+
+<section class="px-6 py-6 max-w-6xl mx-auto">
+  <h2 class="flex py-10 uppercase text-lg">campaña 2024</h2>
+  <div class="md:grid grid-cols-2" id="gallery">
+    {
+      Array.from({ length: 6 }).map((_, i) => (
+        <a
+          href={`/galeria/galeria${i + 1}.webp`}
+          target="_blank"
+          data-pswp-width="1875"
+          data-pswp-height="2500"
+        >
+          <img
+            class="hover:brightness-75  "
+            src={`/galeria/galeria${i + 1}.webp`}
+          />
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+
+  lightbox.init();
+</script>
