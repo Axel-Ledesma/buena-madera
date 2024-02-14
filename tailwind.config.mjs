@@ -8,6 +8,8 @@ export default {
         "cerrar-menu": "url('../svg/x.svg')",
         fondo: "url('../fondo.webp')",
         catalogo: "url('../catalogo.webp')",
+        "mob-1": "url('../mobiliario/mob-1.webp')",
+        "mob-2": "url('../mobiliario/mob-2.webp')",
       },
       colors: {
         marron: "rgb(193, 163, 127)",
