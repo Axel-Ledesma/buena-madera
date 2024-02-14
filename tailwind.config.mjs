@@ -7,6 +7,7 @@ export default {
         "abrir-menu": "url('../svg/menu.svg')",
         "cerrar-menu": "url('../svg/x.svg')",
         fondo: "url('../fondo.webp')",
+        catalogo: "url('../catalogo.webp')",
       },
       colors: {
         marron: "rgb(193, 163, 127)",
