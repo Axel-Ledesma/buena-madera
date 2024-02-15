@@ -1,22 +1,20 @@
 <section
-    {...Astro.props}
-    class="bg-catalogo w-full bg-cover bg-center h-[450px] flex flex-col justify-center items-center text-center"
+  {...Astro.props}
+  class="bg-catalogo w-full bg-cover bg-center h-[450px] flex flex-col justify-center items-center text-center"
 >
-    <div class="bg-black/75 py-5 px-10 md:px-20 mx-6 md:mx-40">
-        <h2 class="text-marron text-2xl md:text-3xl font-bold py-10 uppercase">
-            catálogo online
-        </h2>
-        <p class="text-white md:text-xl">
-            Buena Madera es ideal para exteriores porque reúne todas las
-            ventajas estéticas de la madera natural, pero no necesita su
-            mantenimiento.
-        </p>
-        <p class="text-white md:text-xl py-5">¡Mirá el catálogo online!</p>
-        <button
-            class="hover:bg-marron/90 hover:text-white transition duration-300 active:bg-[#6e5a42]/80 active:transition-none bg-marron w-max px-7 py-2 text-xs lg:text-sm font-bold mx-auto md:mx-0"
-            ><a href="/catalogo.pdf" target="_blank" rel="noopener noreferrer"
-                >Ver</a
-            ></button
-        >
-    </div>
+  <div class="bg-black/75 py-5 px-10 md:px-20 mx-6 md:mx-40">
+    <h2 class="text-marron text-2xl md:text-3xl font-bold py-10 uppercase">
+      catálogo online
+    </h2>
+    <p class="text-white md:text-xl">
+      Buena Madera es ideal para exteriores porque reúne todas las ventajas
+      estéticas de la madera natural, pero no necesita su mantenimiento.
+    </p>
+    <p class="text-white md:text-xl py-5">¡Mirá el catálogo online!</p>
+    <button
+      class="hover:bg-marron/90 hover:text-white transition duration-300 active:bg-[#6e5a42]/80 active:transition-none bg-marron w-max [&>a]:px-7 [&>a]:py-2 [&>a]:block text-xs lg:text-sm font-bold mx-auto md:mx-0"
+      ><a href="/catalogo.pdf" target="_blank" rel="noopener noreferrer">Ver</a
+      ></button
+    >
+  </div>
 </section>
