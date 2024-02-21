@@ -1,73 +1,28 @@
-<section>
+---
+import Arrow from "../components/extras/Arrow.astro";
+---
+
+<section {...Astro.props}>
   <h2
-    class="uppercase text-center py-10 text-lg md:text-3xl xl:text-4xl font-bold tracking-wide"
+    class="uppercase text-center py-10 text-xl md:text-4xl xl:text-5xl font-bold tracking-wide underline decoration-marron underline-offset-8"
   >
-    productos a base de madera de plastico reciclado al 100%
+    productos
   </h2>
-  <div
-    class="text-center text-gris text-xs md:text-sm xl:text-base space-y-4 px-4 text-pretty"
-  >
-    <p>
-      ¡Nuestros productos en la página web tienen precios más asequibles que los
-      que encontrarías en Mercado Libre!
-    </p>
-    <p>
-      Es una excelente oportunidad para obtener lo que necesitas a un mejor
-      precio.
-    </p>
-    <p class="text-marron">
-      ¡No dudes en pedirnos tu presupuesto por WhatsApp y aprovechar nuestras
-      ofertas!
-    </p>
-  </div>
-  <div
-    class="text-white flex flex-col py-8 gap-6 lg:gap-12 md:flex-row md:justify-center [&>button]:bg-marron [&>button]:w-max [&>button>a]:px-7
-    [&>button>a]:py-2 [&>button>a]:block [&>button]:text-xs [&>button]:lg:text-sm [&>button]:font-bold [&>button]:mx-auto [&>button]:md:mx-0"
-  >
-    <button
-      class="hover:bg-marron/80 hover:text-white transition duration-300 active:bg-[#6e5a42]/80 active:transition-none"
-      ><a
-        href="https://wa.me/+5493413669100"
-        target="_blank"
-        rel="noopener noreferrer">Whatsapp (Arg. Zona Norte)</a
-      ></button
-    >
-    <button
-      class="hover:bg-marron/80 hover:text-white transition duration-300 active:bg-[#6e5a42]/80 active:transition-none"
-      ><a
-        href="https://wa.me/5493412268416"
-        target="_blank"
-        rel="noopener noreferrer">Whatsapp (Arg. Zona Sur)</a
-      ></button
-    >
-  </div>
-  <!-- <div
-    class="md:px-5 py-5 flex flex-col md:flex-row justify-between md:justify-center items-center gap-y-10 md:gap-y-0 md:gap-x-10"
-  >
-    <div
-      class="relative w-[90%] md:w-[500px] h-[300px] lg:h-[500px] overflow-hidden"
-    >
-      <a
-        class="text-white uppercase font-bold text-lg absolute left-[50%] top-[50%] z-30 w-max px-4 hover:bg-white hover:text-black transition-hover duration-300"
-        href="#mesa">mesa escandinava</a
-      >
-      <a
-        class="bg-mob-1 brightness-80 bg-center bg-cover md:w-[500px] h-[300px] lg:h-[500px] flex overflow-hidden hover:scale-125 transition-scale duration-[5s]"
-        href="#mesa"></a>
-    </div>
-    <div
-      class="relative w-[90%] md:w-[500px] h-[300px] lg:h-[500px] overflow-hidden"
-    >
-      <a
-        class="text-white uppercase font-bold text-lg absolute left-[50%] top-[50%] z-30 w-max px-4 hover:bg-white hover:text-black transition-hover duration-300"
-        href="#reposera">reposera</a
-      >
-      <a
-        class="bg-mob-2 brightness-80 bg-center bg-cover md:w-[500px] h-[300px] lg:h-[500px] flex overflow-hidden hover:scale-125 transition-scale duration-[5s]"
-        href="#reposera"></a>
-    </div> -->
   <!-- P R O D U C T O S -->
-  <div class="space-y-40 py-10">
+  <div class="flex flex-col gap-y-20 py-10">
+    <!-- T I T U L O   1 -->
+    <div
+      class="flex w-[90%] items-center justify-center lg:justify-start lg:mx-auto"
+    >
+      <Arrow class="size-20" />
+      <Arrow class="size-20 hidden sm:block" />
+      <Arrow class="size-20 hidden lg:block" />
+      <h2
+        class="uppercase flex text-3xl md:text-4xl underline decoration-marron underline-offset-8"
+      >
+        mobiliario
+      </h2>
+    </div>
     <!-- P R O D U C T O   1 -->
     <div
       class="w-[90%] mx-auto lg:flex lg:justify-center lg:gap-x-6 xl:gap-x-20"
@@ -77,7 +32,7 @@
         src="/mobiliario/item-1.webp"
         alt=""
       />
-      <div class="px-2 max-w-lg">
+      <div class="px-2 max-w-lg mx-auto">
         <h3
           id="mesa"
           class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -106,15 +61,27 @@
           >
         </h4>
         <div class="border-b w-10 py-2 border-marron"></div>
-        <button
-          class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
-          ><a
-            class="px-4 py-2"
-            href="https://shorturl.at/gqzO3"
-            target="_blank"
-            rel="noopener noreferrer">¡Ver en Mercado Libre!</a
-          ></button
-        >
+        <div class="flex gap-x-2 items-center">
+          <button
+            class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+            ><a
+              class="px-4 py-2"
+              href="https://wa.link/2v6t9l"
+              target="_blank"
+              rel="noopener noreferrer">¡Compra directa!</a
+            ></button
+          >
+
+          <button
+            class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+            ><a
+              class="px-4 py-2"
+              href="https://shorturl.at/gqzO3"
+              target="_blank"
+              rel="noopener noreferrer">¡Ver en Mercado Libre!</a
+            ></button
+          >
+        </div>
       </div>
     </div>
     <!-- P R O D U C T O   2 -->
@@ -127,7 +94,7 @@
           src="/mobiliario/item-2.webp"
           alt=""
         />
-        <div class="px-2 max-w-lg">
+        <div class="px-2 max-w-lg mx-auto">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -155,15 +122,27 @@
             >
           </h4>
           <div class="border-b w-10 py-2 border-marron"></div>
-          <button
-            class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
-            ><a
-              class="px-4 py-2"
-              href="https://shorturl.at/ejoEG"
-              target="_blank"
-              rel="noopener noreferrer">¡Ver en Mercado Libre!</a
-            ></button
-          >
+          <div class="flex gap-x-2 items-center">
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://wa.link/2v6t9l"
+                target="_blank"
+                rel="noopener noreferrer">¡Compra directa!</a
+              ></button
+            >
+
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://shorturl.at/ejoEG"
+                target="_blank"
+                rel="noopener noreferrer">¡Ver en Mercado Libre!</a
+              ></button
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -172,14 +151,86 @@
       <div
         class="w-[90%] mx-auto lg:flex lg:justify-center lg:gap-x-6 xl:gap-x-20"
       >
-        <div class="md:w-[500px]">
+        <div class="lg:w-[500px]">
+          <img
+            class="h-[300px] md:h-[450px] bg-cover mx-auto"
+            src="/mobiliario/cestos.webp"
+            alt=""
+          />
+        </div>
+        <div class="px-2 max-w-lg mx-auto">
+          <h3
+            id="reposera"
+            class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-wide"
+          >
+            cestos - 100, 70, 50 y 25 litros
+          </h3>
+          <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
+            Fabricada 100% con plástico reciclado.
+          </h4>
+          <div class="mx-1 border-b w-10 border-marron"></div>
+          <span class="py-1 block font-bold text-lg"
+            >CESTO DE 100 LITROS $232.442,21</span
+          >
+          <span class="py-1 block font-bold text-lg"
+            >CESTO DE 70 LITROS $172.452,83</span
+          >
+          <span class="py-1 block font-bold text-lg"
+            >CESTO DE 50 LITROS $132.457,49</span
+          >
+          <span class="py-1 block font-bold text-lg"
+            >CESTO DE 25 LITROS $81.862,55</span
+          >
+          <p class="py-2 tracking-wide text-balance">
+            ¡Ideal para exteriores! Al estar fabricada con madera plástica
+            reciclada no se deforma, no se pudre, no atrae plagas y no requiere
+            mantenimiento.
+          </p>
+          <h4 class="italic py-2">¿Qué estás esperando para tener la tuya?</h4>
+          <h4 class="italic pb-2 text-pretty">
+            Este verano elegí sustentable, elegí <span
+              class="font-bold text-marron">Buena Madera</span
+            >
+          </h4>
+          <div class="border-b w-10 py-2 border-marron"></div>
+          <button
+            class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+            ><a
+              class="px-4 py-2"
+              href="https://wa.link/2v6t9l"
+              target="_blank"
+              rel="noopener noreferrer">¡Compra directa!</a
+            ></button
+          >
+        </div>
+      </div>
+    </div>
+    <!-- T I T U L O   2 -->
+    <div
+      class="flex w-[90%] items-center justify-center lg:justify-end mx-auto"
+    >
+      <h2
+        class="uppercase flex text-3xl md:text-4xl underline decoration-marron underline-offset-8"
+      >
+        tablas
+      </h2>
+      <Arrow class="size-20 rotate-180" />
+      <Arrow class="size-20 hidden sm:block rotate-180" />
+      <Arrow class="size-20 hidden lg:block rotate-180" />
+    </div>
+    <!-- P R O D U C T O   4 -->
+    <div class="space-y-40">
+      <div
+        class="w-[90%] mx-auto lg:flex lg:justify-center lg:gap-x-6 xl:gap-x-20"
+      >
+        <div class="lg:w-[500px]">
           <img
             class="h-[300px] md:h-[450px] bg-cover mx-auto"
             src="/mobiliario/poste.webp"
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg">
+        <div class="px-2 max-w-lg mx-auto">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -208,31 +259,43 @@
             >
           </h4>
           <div class="border-b w-10 py-2 border-marron"></div>
-          <button
-            class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
-            ><a
-              class="px-4 py-2"
-              href="https://wa.link/2v6t9l"
-              target="_blank"
-              rel="noopener noreferrer">¡Ver en Mercado Libre!</a
-            ></button
-          >
+          <div class="flex gap-x-2 items-center">
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://wa.link/2v6t9l"
+                target="_blank"
+                rel="noopener noreferrer">¡Compra directa!</a
+              ></button
+            >
+
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://shorturl.at/acnBW"
+                target="_blank"
+                rel="noopener noreferrer">¡Ver en Mercado Libre!</a
+              ></button
+            >
+          </div>
         </div>
       </div>
     </div>
-    <!-- P R O D U C T O   4 -->
+    <!-- P R O D U C T O   5 -->
     <div class="space-y-40">
       <div
         class="w-[90%] mx-auto lg:flex lg:justify-center lg:gap-x-6 xl:gap-x-20"
       >
-        <div class="md:w-[500px]">
+        <div class="lg:w-[500px]">
           <img
             class="h-[300px] md:h-[450px] bg-cover mx-auto"
             src="/mobiliario/liston.webp"
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg">
+        <div class="px-2 max-w-lg mx-auto">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -265,31 +328,43 @@
             >
           </h4>
           <div class="border-b w-10 py-2 border-marron"></div>
-          <button
-            class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
-            ><a
-              class="px-4 py-2"
-              href="https://shorturl.at/xGX68"
-              target="_blank"
-              rel="noopener noreferrer">¡Ver en Mercado Libre!</a
-            ></button
-          >
+          <div class="flex gap-x-2 items-center">
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://wa.link/2v6t9l"
+                target="_blank"
+                rel="noopener noreferrer">¡Compra directa!</a
+              ></button
+            >
+
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://shorturl.at/xGX68"
+                target="_blank"
+                rel="noopener noreferrer">¡Ver en Mercado Libre!</a
+              ></button
+            >
+          </div>
         </div>
       </div>
     </div>
-    <!-- P R O D U C T O   5 -->
+    <!-- P R O D U C T O   6 -->
     <div class="space-y-40">
       <div
         class="w-[90%] mx-auto lg:flex lg:justify-center lg:gap-x-6 xl:gap-x-20"
       >
-        <div class="md:w-[500px]">
+        <div class="lg:w-[500px]">
           <img
             class="h-[300px] md:h-[450px] bg-cover mx-auto"
             src="/mobiliario/tabla.webp"
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg">
+        <div class="px-2 max-w-lg mx-auto">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -322,24 +397,106 @@
             >
           </h4>
           <div class="border-b w-10 py-2 border-marron"></div>
+          <div class="flex gap-x-2 items-center">
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://wa.link/2v6t9l"
+                target="_blank"
+                rel="noopener noreferrer">¡Compra directa!</a
+              ></button
+            >
+
+            <button
+              class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
+              ><a
+                class="px-4 py-2"
+                href="https://shorturl.at/npwL3"
+                target="_blank"
+                rel="noopener noreferrer">¡Ver en Mercado Libre!</a
+              ></button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- T I T U L O   3 -->
+    <div
+      class="flex w-[90%] items-center justify-center lg:justify-start lg:mx-auto"
+    >
+      <Arrow class="size-20" />
+      <Arrow class="size-20 hidden sm:block" />
+      <Arrow class="size-20 hidden lg:block" />
+      <h2
+        class="uppercase flex text-3xl md:text-4xl underline decoration-marron underline-offset-8"
+      >
+        módulos
+      </h2>
+    </div>
+    <!-- P R O D U C T O   7 -->
+    <div class="space-y-40">
+      <div
+        class="w-[90%] mx-auto lg:flex lg:justify-center lg:gap-x-6 xl:gap-x-20"
+      >
+        <div class="lg:w-[500px]">
+          <img
+            class="h-[300px] md:h-[450px] bg-cover mx-auto"
+            src="/mobiliario/modulos.webp"
+            alt=""
+          />
+        </div>
+        <div class="px-2 max-w-lg mx-auto">
+          <h3
+            id="reposera"
+            class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
+          >
+            módulos para decks
+          </h3>
+          <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
+            Fabricada 100% con plástico reciclado.
+          </h4>
+          <div class="mx-1 border-b w-10 border-marron"></div>
+          <span class="py-4 block font-bold text-lg"
+            >MÓDULO CUADRADO $103.866,40</span
+          >
+          <span class="py-4 block font-bold text-lg"
+            >MÓDULO RECTANGULAR $174.830,48</span
+          >
+          <p class="py-2 tracking-wide text-balance">
+            ¡Ideal para exteriores! Al estar fabricada con madera plástica
+            reciclada no se deforma, no se pudre, no atrae plagas y no requiere
+            mantenimiento.
+          </p>
+          <p class="py-2 text-gris text-xs leading-6">
+            Medida del módulo cuadrado: 970x970x48mm <br />
+            Medida del módulo rectangular: 1940x970x48mm <br />
+          </p>
+          <h4 class="italic py-2">¿Qué estás esperando para tener la tuya?</h4>
+          <h4 class="italic pb-2 text-pretty">
+            Este verano elegí sustentable, elegí <span
+              class="font-bold text-marron">Buena Madera</span
+            >
+          </h4>
+          <div class="border-b w-10 py-2 border-marron"></div>
           <button
             class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
             ><a
               class="px-4 py-2"
-              href="https://shorturl.at/xGX68"
+              href="https://wa.link/2v6t9l"
               target="_blank"
-              rel="noopener noreferrer">¡Ver en Mercado Libre!</a
+              rel="noopener noreferrer">¡Quiero más info!</a
             ></button
           >
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- 
+  <!-- 
 <style>
   .z-30 {
     transform: translate3d(-50%, -50%, 0);
   }
 </style>
 -->
+</section>

@@ -2,9 +2,20 @@
 import "photoswipe/style.css";
 ---
 
-<section class="px-6 py-6 max-w-6xl mx-auto">
-  <h2 class="flex py-10 uppercase text-lg">campaña 2024</h2>
-  <div class="md:grid grid-cols-2" id="gallery">
+<section class="px-6 pb-20 pt-16 bg-marron/75">
+  <h2
+    class="flex pb-10 uppercase text-lg max-w-6xl mx-auto text-center justify-center"
+  >
+    <a
+      class="mt-6 py-2 px-3 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50 text-balance"
+      href="https://www.instagram.com/geabuenamadera/"
+      target="_blank"
+      rel="noopener noreferrer"
+      >¡hace click y seguinos en instagram! <br />
+      @geabuenamadera</a
+    >
+  </h2>
+  <div class="md:flex" id="gallery">
     {
       Array.from({ length: 6 }).map((_, i) => (
         <a
@@ -14,7 +25,7 @@ import "photoswipe/style.css";
           data-pswp-height="2500"
         >
           <img
-            class="hover:brightness-75  "
+            class="hover:brightness-75 "
             src={`/galeria/galeria${i + 1}.webp`}
           />
         </a>

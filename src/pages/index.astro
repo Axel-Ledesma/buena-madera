@@ -7,6 +7,7 @@ import Presupuesto from "../components/Presupuesto.astro";
 import Galeria from "../components/Galeria.astro";
 import Catalogo from "../components/Catalogo.astro";
 import Mobiliario from "../components/Mobiliario.astro";
+import Whatsapp from "../components/extras/Whatsapp.astro";
 ---
 
 <Layout title="Buena Madera - GEA Sustentable">
@@ -16,7 +17,7 @@ import Mobiliario from "../components/Mobiliario.astro";
       class="text-center bg-fondo bg-cover h-screen flex justify-center items-center flex-col text-white px-2"
     >
       <h1 class="text-4xl xl:text-6xl text-balance font-semibold py-6 px-3">
-        Madera fabricada con 100% plástico reciclado
+        Madera fabricada con plásticos 100% reciclados
       </h1>
       <div class="border-b w-[90%] md:w-2/4 border-marron"></div>
       <h2 class="py-6 text-lg lg:text-xl xl:text-2xl tracking-widest">
@@ -26,26 +27,28 @@ import Mobiliario from "../components/Mobiliario.astro";
     <Compromiso id="Compromiso" />
     <Beneficios id="Beneficios" />
     <Galeria />
-    <Catalogo id="Catalogo" />
-    <Mobiliario />
-    <Presupuesto />
-    <footer id="Contacto" class="text-center py-12">
+    <Mobiliario id="Productos" />
+    <Catalogo />
+    <!--<Presupuesto /> -->
+    <footer id="Contacto" class="text-center py-12 px-5">
       <img class="h-32 mx-auto" src="/footer/bm.webp" alt="" />
       <h3 class="py-4 text-xs md:text-base lg:text-lg font-bold tracking-wide">
         Autopista Aramburu Km 280.5 <br />
         Alvear, Santa Fe. Argentina
       </h3>
       <div class="border-b w-60 border-marron py-2 mx-auto"></div>
-      <a
-        class="py-8 block max-w-fit mx-auto"
-        href="https://www.instagram.com/geabuenamadera/"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><img
-          src="/footer/ig.webp"
-          alt="Logo de instagram, este es un boton que te redireccion a la pagina de instragram de Buena Madera by GEA sustentable"
-        /></a
-      >
+      <p class="py-6 md:text-lg lg:text-xl">
+        En <span class="text-marron">buena madera</span> brindamos asesoramiento
+        personalizado. <br />
+        ¡Comunicate con nosotros!
+
+        <a
+          class="block mx-auto w-min"
+          href="https://wa.link/2v6t9l"
+          target="_blank"
+          rel="noopener noreferrer"><Whatsapp class="size-20" /></a
+        >
+      </p>
     </footer>
   </main>
 </Layout>
