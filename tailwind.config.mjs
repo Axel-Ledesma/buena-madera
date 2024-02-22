@@ -4,12 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "abrir-menu": "url('../svg/menu.svg')",
-        "cerrar-menu": "url('../svg/x.svg')",
-        fondo: "url('../fondo.webp')",
-        catalogo: "url('../catalogo.webp')",
-        "mob-1": "url('../mobiliario/mob-1.webp')",
-        "mob-2": "url('../mobiliario/mob-2.webp')",
+        "abrir-menu": "url('/svg/menu.svg')",
+        "cerrar-menu": "url('/svg/x.svg')",
+        fondo: "url('/fondo.webp')",
+        catalogo: "url('/catalogo.webp')",
       },
       colors: {
         marron: "rgb(193, 163, 127)",
