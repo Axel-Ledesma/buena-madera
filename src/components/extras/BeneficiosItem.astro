@@ -1,4 +1,6 @@
 ---
+import Linea from './Linea.astro';
+
 interface Props {
   src: string;
   tittle: string;
@@ -22,7 +24,7 @@ const { src, tittle, description } = Astro.props;
     >
       {tittle}
     </h3>
-    <div class="border-b w-12 border-black mx-auto"></div>
+    <Linea class="border-b w-12 border-black mx-auto"/>
     <p
       class="py-4 pb-12 text-gris max-w-[500px] mx-auto text-[10px]/5 md:text-sm"
     >

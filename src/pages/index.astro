@@ -3,11 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Compromiso from "../components/Compromiso.astro";
 import Beneficios from "../components/Beneficios.astro";
-import Presupuesto from "../components/Presupuesto.astro";
 import Galeria from "../components/Galeria.astro";
 import Catalogo from "../components/Catalogo.astro";
 import Mobiliario from "../components/Mobiliario.astro";
 import Whatsapp from "../components/extras/Whatsapp.astro";
+import Linea from "../components/extras/Linea.astro";
 ---
 
 <Layout title="Buena Madera - GEA Sustentable">
@@ -19,7 +19,7 @@ import Whatsapp from "../components/extras/Whatsapp.astro";
       <h1 class="text-4xl xl:text-6xl text-balance font-semibold py-6 px-3">
         Madera fabricada con plásticos 100% reciclados
       </h1>
-      <div class="border-b w-[90%] md:w-2/4 border-marron"></div>
+      <Linea class="border-b w-[90%] md:w-2/4 border-marron"/>
       <h2 class="py-6 text-lg lg:text-xl xl:text-2xl tracking-widest">
         Duradera, resistente y sostenible
       </h2>
@@ -29,14 +29,13 @@ import Whatsapp from "../components/extras/Whatsapp.astro";
     <Galeria />
     <Mobiliario id="Productos" />
     <Catalogo />
-    <!--<Presupuesto /> -->
-    <footer id="Contacto" class="text-center py-12 px-5">
+    <footer id="Contacto" class="text-center py-12 px-5 ">
       <img class="h-32 mx-auto" src="/footer/bm.webp" alt="" />
       <h3 class="py-4 text-xs md:text-base lg:text-lg font-bold tracking-wide">
         Autopista Aramburu Km 280.5 <br />
         Alvear, Santa Fe. Argentina
       </h3>
-      <div class="border-b w-60 border-marron py-2 mx-auto"></div>
+      <Linea class="border-b w-60 border-marron py-2 mx-auto"/>
       <p class="py-6 md:text-lg lg:text-xl">
         En <span class="text-marron">buena madera</span> brindamos asesoramiento
         personalizado. <br />
@@ -46,8 +45,10 @@ import Whatsapp from "../components/extras/Whatsapp.astro";
           class="block mx-auto w-min"
           href="https://wa.link/2v6t9l"
           target="_blank"
-          rel="noopener noreferrer"><Whatsapp class="size-20" /></a
+          rel="noopener noreferrer"
+          aria-label="Boton para dirigirse al WhatsApp de Buena Madera"><Whatsapp class="size-20 my-4" /></a
         >
+        O nos podes contactar por mail a buenamadera@geasustentable.com.ar
       </p>
     </footer>
   </main>

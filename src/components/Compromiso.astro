@@ -1,9 +1,13 @@
+---
+import Linea from "./extras/Linea.astro";
+---
+
 <section {...Astro.props}>
   <div class="px-6 py-6 my-10 text-center">
     <h1 class="uppercase font-semibold lg:text-xl xl:text-2xl">
       Comprometidos con el cuidado del planeta
     </h1>
-    <div class="border-b w-20 border-black py-2 mx-auto"></div>
+    <Linea class="border-b w-20 border-black py-2 mx-auto"/>
     <h2
       class="text-gris py-4 text-xs lg:text-sm text-center tracking-wide font-semibold text-pretty"
     >
@@ -28,7 +32,7 @@
       <h2 class="text-marron text-sm text-pretty md:text-base lg:text-xl">
         BUSCAMOS IMPULSAR LA ECONOMÍA CIRCULAR Y EL ZERO WASTE
       </h2>
-      <div class="border-b w-20 border-black py-2 mx-auto"></div>
+      <Linea class="border-b w-20 border-gris py-2 mx-auto"/>
       <p class="py-4 leading-6 text-xs md:text-sm lg:text-base">
         En <span class="font-bold">Buena Madera</span>, nos dedicamos a promover
         una economía circular aprovechando los residuos plásticos y
@@ -42,7 +46,7 @@
       <h2 class="text-marron text-sm text-pretty md:text-base lg:text-xl">
         EL COMPROMISO AMBIENTAL DEL GRUPO GEA Y BUENA MADERA
       </h2>
-      <div class="border-b w-20 border-black py-2 mx-auto"></div>
+      <Linea class="border-b w-20 border-gris py-2 mx-auto"/>
       <p class="py-4 leading-6 text-xs md:text-sm lg:text-base">
         <span class="font-bold">Buena Madera</span> es una unidad de negocios del
         <span class="font-bold">Grupo GEA</span> creada en 2022. Afirma nuestro compromiso
@@ -53,19 +57,3 @@
     </div>
   </div>
 </section>
-<style>
-  #divs {
-    animation: aparecer linear both 3s;
-    animation-timeline:;
-  }
-  @keyframes aparecer {
-    from {
-      opacity: 0;
-      translate: 0 100px;
-    }
-    to {
-      opacity: 1;
-      translate: 0 0;
-    }
-  }
-</style>

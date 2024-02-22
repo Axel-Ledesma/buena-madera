@@ -1,5 +1,6 @@
 ---
 import Arrow from "../components/extras/Arrow.astro";
+import Linea from "./extras/Linea.astro";
 ---
 
 <section {...Astro.props}>
@@ -29,10 +30,10 @@ import Arrow from "../components/extras/Arrow.astro";
     >
       <img
         class="h-[300px] w-full md:h-[450px] lg:w-[500px] bg-cover"
-        src="/mobiliario/item-1.webp"
+        src="/mobiliario/mesa.webp"
         alt=""
       />
-      <div class="px-2 max-w-lg mx-auto">
+      <div class="px-2 max-w-lg">
         <h3
           id="mesa"
           class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -42,7 +43,7 @@ import Arrow from "../components/extras/Arrow.astro";
         <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
           Fabricada 100% con plástico reciclado.
         </h4>
-        <div class="mx-1 border-b w-10 border-marron"></div>
+        <Linea class="mx-1 border-b w-10 border-marron"/>
         <span class="py-4 block font-bold text-xl">PVP $369.791,73</span>
         <p class="py-2 tracking-wide text-balance">
           ¡Ideal para exteriores! Al estar fabricada con madera plástica
@@ -60,7 +61,7 @@ import Arrow from "../components/extras/Arrow.astro";
             class="font-bold text-marron">Buena Madera</span
           >
         </h4>
-        <div class="border-b w-10 py-2 border-marron"></div>
+        <Linea class="border-b w-10 py-2 border-marron"/>
         <div class="flex gap-x-2 items-center">
           <button
             class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
@@ -91,10 +92,10 @@ import Arrow from "../components/extras/Arrow.astro";
       >
         <img
           class="h-[300px] w-full md:h-[450px] lg:w-[500px] bg-cover"
-          src="/mobiliario/item-2.webp"
+          src="/mobiliario/reposera.webp"
           alt=""
         />
-        <div class="px-2 max-w-lg mx-auto">
+        <div class="px-2 max-w-lg ">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -104,7 +105,7 @@ import Arrow from "../components/extras/Arrow.astro";
           <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
             Fabricada 100% con plástico reciclado.
           </h4>
-          <div class="mx-1 border-b w-10 border-marron"></div>
+          <Linea class="mx-1 border-b w-10 border-marron"/>
           <span class="py-4 block font-bold text-xl">PVP $256.671,25</span>
           <p class="py-2 tracking-wide text-balance">
             ¡Ideal para exteriores! Al estar fabricada con madera plástica
@@ -121,7 +122,7 @@ import Arrow from "../components/extras/Arrow.astro";
               class="font-bold text-marron">Buena Madera</span
             >
           </h4>
-          <div class="border-b w-10 py-2 border-marron"></div>
+          <Linea class="border-b w-10 py-2 border-marron"/>
           <div class="flex gap-x-2 items-center">
             <button
               class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
@@ -158,7 +159,7 @@ import Arrow from "../components/extras/Arrow.astro";
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg mx-auto">
+        <div class="px-2 max-w-lg ">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-wide"
@@ -168,7 +169,7 @@ import Arrow from "../components/extras/Arrow.astro";
           <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
             Fabricada 100% con plástico reciclado.
           </h4>
-          <div class="mx-1 border-b w-10 border-marron"></div>
+          <Linea class="mx-1 border-b w-10 border-marron"/>
           <span class="py-1 block font-bold text-lg"
             >CESTO DE 100 LITROS $232.442,21</span
           >
@@ -192,7 +193,7 @@ import Arrow from "../components/extras/Arrow.astro";
               class="font-bold text-marron">Buena Madera</span
             >
           </h4>
-          <div class="border-b w-10 py-2 border-marron"></div>
+          <Linea class="border-b w-10 py-2 border-marron"/>
           <button
             class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
             ><a
@@ -230,7 +231,7 @@ import Arrow from "../components/extras/Arrow.astro";
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg mx-auto">
+        <div class="px-2 max-w-lg ">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -240,7 +241,7 @@ import Arrow from "../components/extras/Arrow.astro";
           <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
             Fabricado 100% con plástico reciclado.
           </h4>
-          <div class="mx-1 border-b w-10 border-marron"></div>
+          <Linea class="mx-1 border-b w-10 border-marron"/>
           <span class="py-4 block font-bold text-xl">PVP $20.747,87</span>
           <p class="py-2 tracking-wide text-balance">
             ¡Ideal para exteriores! Al estar fabricado con madera plástica
@@ -258,7 +259,7 @@ import Arrow from "../components/extras/Arrow.astro";
               class="font-bold text-marron">Buena Madera</span
             >
           </h4>
-          <div class="border-b w-10 py-2 border-marron"></div>
+          <Linea class="border-b w-10 py-2 border-marron"/>
           <div class="flex gap-x-2 items-center">
             <button
               class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
@@ -295,7 +296,7 @@ import Arrow from "../components/extras/Arrow.astro";
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg mx-auto">
+        <div class="px-2 max-w-lg ">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -305,7 +306,7 @@ import Arrow from "../components/extras/Arrow.astro";
           <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
             Fabricada 100% con plástico reciclado.
           </h4>
-          <div class="mx-1 border-b w-10 border-marron"></div>
+          <Linea class="mx-1 border-b w-10 border-marron"/>
           <span class="py-4 block font-bold text-xl">PVP $8.843,89</span>
           <p class="py-2 tracking-wide text-balance">
             ¡Ideal para exteriores! Al estar fabricada con madera plástica
@@ -327,7 +328,7 @@ import Arrow from "../components/extras/Arrow.astro";
               class="font-bold text-marron">Buena Madera</span
             >
           </h4>
-          <div class="border-b w-10 py-2 border-marron"></div>
+          <Linea class="border-b w-10 py-2 border-marron"/>
           <div class="flex gap-x-2 items-center">
             <button
               class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
@@ -364,7 +365,7 @@ import Arrow from "../components/extras/Arrow.astro";
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg mx-auto">
+        <div class="px-2 max-w-lg ">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -374,7 +375,7 @@ import Arrow from "../components/extras/Arrow.astro";
           <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
             Fabricada 100% con plástico reciclado.
           </h4>
-          <div class="mx-1 border-b w-10 border-marron"></div>
+          <Linea class="mx-1 border-b w-10 border-marron"/>
           <span class="py-4 block font-bold text-xl">PVP $8.734,99</span>
           <p class="py-2 tracking-wide text-balance">
             ¡Ideal para exteriores! Al estar fabricada con madera plástica
@@ -396,7 +397,7 @@ import Arrow from "../components/extras/Arrow.astro";
               class="font-bold text-marron">Buena Madera</span
             >
           </h4>
-          <div class="border-b w-10 py-2 border-marron"></div>
+          <Linea class="border-b w-10 py-2 border-marron"/>
           <div class="flex gap-x-2 items-center">
             <button
               class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
@@ -446,7 +447,7 @@ import Arrow from "../components/extras/Arrow.astro";
             alt=""
           />
         </div>
-        <div class="px-2 max-w-lg mx-auto">
+        <div class="px-2 max-w-lg ">
           <h3
             id="reposera"
             class="pt-6 lg:pt-0 uppercase text-lg md:text-xl tracking-widest"
@@ -456,7 +457,7 @@ import Arrow from "../components/extras/Arrow.astro";
           <h4 class="py-3 px-1 text-gris text-xs md:text-base tracking-widest">
             Fabricada 100% con plástico reciclado.
           </h4>
-          <div class="mx-1 border-b w-10 border-marron"></div>
+          <Linea class="mx-1 border-b w-10 border-marron"/>
           <span class="py-4 block font-bold text-lg"
             >MÓDULO CUADRADO $103.866,40</span
           >
@@ -478,7 +479,7 @@ import Arrow from "../components/extras/Arrow.astro";
               class="font-bold text-marron">Buena Madera</span
             >
           </h4>
-          <div class="border-b w-10 py-2 border-marron"></div>
+          <Linea class="border-b w-10 py-2 border-marron"/>
           <button
             class="mt-6 bg-marron transition border-2 border-gray-300 rounded-lg text-white font-bold text-sm items-center flex hover:brightness-75 active:brightness-50"
             ><a
@@ -492,11 +493,4 @@ import Arrow from "../components/extras/Arrow.astro";
       </div>
     </div>
   </div>
-  <!-- 
-<style>
-  .z-30 {
-    transform: translate3d(-50%, -50%, 0);
-  }
-</style>
--->
 </section>

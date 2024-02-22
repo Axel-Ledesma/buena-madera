@@ -1,5 +1,6 @@
 ---
 import BeneficiosItem from "./extras/BeneficiosItem.astro";
+import Linea from "./extras/Linea.astro";
 
 const BENEFICIO = [
   {
@@ -29,12 +30,12 @@ const BENEFICIO = [
 ];
 ---
 
-<section {...Astro.props} class="px-6 text-center">
+<section {...Astro.props}  class="px-6 text-center">
   <div>
     <h1 class="uppercase font-semibold lg:text-xl xl:text-2xl">
       beneficios de buena madera
     </h1>
-    <div class="border-b w-20 border-black py-2 mx-auto"></div>
+    <Linea class="border-b w-20 border-black py-2 mx-auto"/>
     <h2 class="py-4 text-xs lg:text-sm tracking-wide font-semibold text-gris">
       Creemos que la inversión en sostenibilidad es una inversión para el
       futuro.
@@ -48,3 +49,4 @@ const BENEFICIO = [
     ))
   }
 </section>
+

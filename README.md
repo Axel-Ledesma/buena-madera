@@ -1,54 +1,26 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
+# Buena Madera by GEA Sustentable
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este proyecto se basa en clonar la pagina web de BUENA MADERA, para demostrar la performance que tiene utilizar ASTRO para sitios estaticos, aumentando la velocidad un minimo de 200%.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Color Reference
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Marron claro |  ![#c1a37f](https://via.placeholder.com/10/c1a37f?text=+) #c1a37f|
+| Oscuro | ![#1e1e1e](https://via.placeholder.com/10/1e1e1e?text=+) #1e1e1e |
+| Gris | ![#505050](https://via.placeholder.com/10/505050?text=+) #505050 |
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Screenshots
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+![491shots_so](https://github.com/Axel-Ledesma/buena-madera/assets/123254046/8493232f-7025-4dd1-9b87-44da57ab4b7b)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## PhotoSwipe para realizar la galeria
 
-## 🧞 Commands
+Se utilizo la libreria PHOTOSWIPE para simplificar la galeria 
 
-All commands are run from the root of the project, from a terminal:
+https://photoswipe.com/
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
